@@ -52,19 +52,19 @@ namespace Bin2Dec
 
 
 
-                    valorDecimal.Text = $"O equivalente decimal para {binaryNumber} é {result}";
+                    valorDecimal.Text = $" {binaryNumber} = {result}";
 
 
                 }
             }
             catch (Exception e)
             {
-                throw new Exception("Erro na conversão!");
+                throw new Exception("Erro na conversão: " + e.Message);
             }
 
         }
 
-        private void ConvertToDecimal(object sender, MouseButtonEventArgs e)
+        private void ConvertToDecimal(object sender, RoutedEventArgs e)
         {
             ConverToDecimal(valorBinario.Text);
         }

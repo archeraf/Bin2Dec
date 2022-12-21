@@ -28,7 +28,7 @@
         <TextBlock Background="White"  x:Name="valorDecimal" Grid.Row="2" Grid.Column="1" MinWidth="150" Width="Auto" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,6"/>
 
 
-        <Button Content="Converter" Grid.Row="3" VerticalAlignment="Bottom" MouseDown="ConvertToDecimal"/>
+        <Button Content="Converter" Grid.Row="3" VerticalAlignment="Bottom" Click="ConvertToDecimal" />
 
     </Grid>
 </Window>
