@@ -1,0 +1,34 @@
+﻿<Window x:Class="Bin2Dec.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bin2Dec"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="LightGray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        
+        
+        <Label Content="Conversor Bin2Dec" FontSize="32" Grid.ColumnSpan="2"/>
+
+        <Label Content="Número binário:" x:Name="txtBinario" FontSize="18" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        <TextBox Grid.Row="1" x:Name="valorBinario" Grid.Column="1" Width="150" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,6"/>
+
+        <Label Content="Conversão Decimal:" x:Name="txtDecimal" FontSize="18" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+        <TextBlock Background="White"  x:Name="valorDecimal" Grid.Row="2" Grid.Column="1" MinWidth="150" Width="Auto" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,6"/>
+
+
+        <Button Content="Converter" Grid.Row="3" VerticalAlignment="Bottom" MouseDown="ConvertToDecimal"/>
+
+    </Grid>
+</Window>
